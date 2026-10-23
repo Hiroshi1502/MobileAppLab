@@ -46,7 +46,7 @@ class MainPage extends StatelessWidget{
               const Text(
                 "Student",
                 style:TextStyle(
-                  fontSize: 10,
+                  fontSize: 20,
                 )
               ),
             ], 
