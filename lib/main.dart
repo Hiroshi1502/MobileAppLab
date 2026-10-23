@@ -37,13 +37,19 @@ class MainPage extends StatelessWidget{
                 ),
               ),
               const Text(
-                "CatGAMER1234567",
+                "Ayam Goreng",
                 style:TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
                 )
               ),
-            ],
+              const Text(
+                "Student",
+                style:TextStyle(
+                  fontSize: 10,
+                )
+              ),
+            ], 
           ),
         )
       ),
