@@ -43,15 +43,93 @@ class MainPage extends StatelessWidget{
                   fontWeight: FontWeight.bold,
                 )
               ),
-              const Text(
-                "Student",
-                style:TextStyle(
-                  fontSize: 20,
-                )
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 14,
+                  vertical: 6
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(88.888),
+                ),
+                child: const Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.school, size: 17, color: Colors.yellow),
+                    SizedBox(width: 4),
+                    Text ("Student"),
+                  ]
+                ),
+              ),
+              const SizedBox(height: 40),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: const BoxDecoration(
+                        color: Colors.yellowAccent
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/images/anwar.png',
+                            width: 38,
+                          ),
+                          const SizedBox(height:10),
+                          const Text("80%"),
+                          const SizedBox(height:10),
+                          const Text("Anwar Gaming"),
+                        ]
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: const BoxDecoration(
+                        color: Colors.cyanAccent,
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/images/anwar.png',
+                            width: 38,
+                          ),
+                          const SizedBox(height:10),
+                          const Text("60%"),
+                          const SizedBox(height:10),
+                          const Text("Chicken Gaming"),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: const BoxDecoration(
+                        color: Colors.pinkAccent,
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/images/anwar.png',
+                            width: 38,
+                          ),
+                          const SizedBox(height:10),
+                          const Text("90%"),
+                          const SizedBox(height:10),
+                          const Text("Bro Gaming"),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ], 
           ),
-        )
+        ),
       ),
     );
   }
